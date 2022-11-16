@@ -26,6 +26,4 @@ mongoose.connect(process.env.mongoDbConection)
     console.log("Error conectado e mongo DB" + error);
 })
 
-app.listen(process.env.port || 3000 ,() => {
-    console.log("El servidor esta listo y funcionando en el puerto 9000");
-})
+app.listen(process.env.PORT || 4000,() => { console.log("Server is listening")})
