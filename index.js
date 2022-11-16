@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+var cors = require('cors')
 const empresaRoutes = require('./src/routes/empresa');
 const produtosRoutes = require('./src/routes/productos')
 
@@ -7,6 +8,8 @@ require('dotenv').config();
 
 
 const app = express();
+// nos permite volarnos la politica de seguridad cors
+app.use(cors())
 
 //Express configurado para json
 app.use(express.json());
