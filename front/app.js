@@ -1,5 +1,5 @@
 
-function obtenerUsuarios(){
+function obtenerProducto(){
 
     fetch("https://apitienda.herokuapp.com/productos/select")
     .then((response,reject) => {
@@ -19,9 +19,9 @@ function armarTabla(data){
         table.innerHTML =  table.innerHTML + "<tr><td>"+ element.item +"</td> <td>"+ element.name +"</td> <td>"+ element.description +"</td> <td>"+ element.price +"</td> <td>"+ element.stock +"</td></tr>"
     }
 }
-/*
 
-function registrarUsuario(){
+
+function registrarProducto(){
 
 
     var object = {};
@@ -41,7 +41,7 @@ function registrarUsuario(){
     console.log(json);
 
     //Peticion al servidor
-    var serverResponse = fetch('http://192.168.1.6:9000/productos/create',{
+    var serverResponse = fetch('https://apitienda.herokuapp.com/productos/create',{
         method: 'POST',
         headers:{
             'Accept': 'application/json',
@@ -53,9 +53,14 @@ function registrarUsuario(){
     //Obtenemos la respuesta de la promesa
     serverResponse.then((response,reject) => {
         console.log(response);
-        alert("Usuario registrado exitosamente");
+        alert("producto guardado exitosamente");
+        obtenerProducto();
     }).catch((error) => {
         console.log(error);
     });
+    
 }
-*/
+
+
+
+    

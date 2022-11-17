@@ -10,6 +10,9 @@
 <body class="bg-info">
     
     <div class="container">
+
+<div class="row"></div>
+
         <div class="row">
             <div class='col-sm-12 bg-secondary m-3' >
                 <h1>
@@ -20,33 +23,39 @@
     </div>
     <main>
         <div class="container">
+            
             <div class="row">
                 <div class="col-sm-6">
                     <form id="formData">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Codigo</label>
-                            <input name="nombres" type="text" class="form-control" >
+                            <input name="item" type="text" class="form-control" >
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                            <input name="apellidos" type="text" class="form-control" >
+                            <input name="name" type="text" class="form-control" >
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Descripcion</label>
-                            <input name="correoElectronico" type="text" class="form-control">
+                            <input name="description" type="text" class="form-control">
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Precio</label>
-                            <input name="numeroDocumento" type="text" class="form-control">
+                            <input name="price" type="text" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Cantidad disponible</label>
-                            <input name="numeroDocumento" type="text" class="form-control">
+                            <input name="stock" type="text" class="form-control">
                         </div>
                     </form>
+                   
+                        <div >
+                            <button onclick="obtenerProducto()" class="btn btn-sm btn-success">Obtener productos</button>
+                            <button onclick="registrarProducto()" class="btn btn-sm btn-primary">guardar producto</button>
+                        </div>
                 </div>
 
                 <div class="col-sm-6">
@@ -67,11 +76,7 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <button onclick="obtenerUsuarios()" class="btn btn-sm btn-success">Obtener productos</button>
-                    <button onclick="registrarUsuario()" class="btn btn-sm btn-primary">guardar producto</button>
-                </div>
+            
             </div>
         </div>
     </main>
