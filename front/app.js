@@ -77,7 +77,7 @@ seccion de ventas
 
 function obtenerVenta(){
 
-    fetch("http://192.168.1.6:4000/venta/select")
+    fetch("https://apitienda.herokuapp.com/venta/select")
     .then((response,reject) => {
         return response.json()
     }).then(function(json){
@@ -117,7 +117,7 @@ function registrarVenta(){
     console.log(json);
 
     //Peticion al servidor
-    var serverResponse = fetch('http://192.168.1.6:4000/venta/create',{
+    var serverResponse = fetch('https://apitienda.herokuapp.com/venta/create',{
         method: 'POST',
         headers:{
             'Accept': 'application/json',
