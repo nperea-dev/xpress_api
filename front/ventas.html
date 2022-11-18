@@ -45,33 +45,26 @@
                 <div class="col-sm-6">
                     <form id="formData">
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Codigo</label>
-                            <input name="item" type="text" class="form-control" >
+                            <label for="exampleFormControlInput1" class="form-label">Producto</label>
+                            <input name="producto" type="text" class="form-control" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                            <input name="name" type="text" class="form-control" >
+                            <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+                            <input name="cantidad" type="text" class="form-control" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Descripcion</label>
-                            <input name="description" type="text" class="form-control">
+                            <label for="exampleFormControlInput1" class="form-label">Valor</label>
+                            <input name="valor" type="text" class="form-control">
                         </div>
 
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Precio</label>
-                            <input name="price" type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Cantidad disponible</label>
-                            <input name="stock" type="text" class="form-control">
-                        </div>
+                       
                     </form>
                    
                         <div >
-                            <button onclick="obtenerProducto()" class="btn btn-sm btn-success">Obtener productos</button>
-                            <button onclick="registrarProducto()" class="btn btn-sm btn-primary">guardar producto</button>
+                            <button onclick="obtenerVenta()" class="btn btn-sm btn-success">Listar Venta</button>
+                            <button onclick="registrarVenta()" class="btn btn-sm btn-primary">guardar Venta</button>
                         </div>
                 </div>
 
@@ -79,14 +72,13 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Codigo</th>
-                                <th>Nombre</th>
-                                <th>Descripcion</th>
-                                <th>Precio</th>
-                                <th>Cant. disponible</th>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Valor</th>
+                               
                             </tr>
                         </thead>
-                        <tbody id="tablebody">
+                        <tbody id="tableVentabody">
                             
                         </tbody>
                     </table>
